@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelime Pratiği</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Kelime Pratiği</h2>
+    <div id="question-container">
+      <div class="question"></div>
+      <input type="text" id="user-input" placeholder="Cevap girin" /><br />
+      <div id="multiple-answer">
+        <label for="answer1">
+          <input type="radio" id="answer1" name="answer" />
+          <span id="answer1-text"></span>
+        </label>
+        <label for="answer2">
+          <input type="radio" id="answer2" name="answer" />
+          <span id="answer2-text"></span>
+        </label>
+        <label for="answer3">
+          <input type="radio" id="answer3" name="answer" />
+          <span id="answer3-text"></span>
+        </label>
+      </div>
+      <button id="submit-answer">Cevapla</button>
+      <div class="result"></div>
+    </div>
+    <button id="next-question" style="display: none; width: 90%">
+      Sonraki Soru
+    </button>
+    <div class="accordion">
+      <input type="checkbox" id="section1" class="accordion-checkbox" />
+      <label for="section1" class="accordion-label">Özellikler</label>
+      <div class="accordion-content">
+        <div>
+          <p>Pratik Türü</p>
+          <label for="yazili">
+            Yazılı
+            <input type="radio" id="yazili" name="practiceType" value="text" />
+          </label>
+          <br />
+          <label for="coktan-secmeli">
+            Çoktan seçmeli
+            <input
+              type="radio"
+              id="coktan-secmeli"
+              name="practiceType"
+              value="multiple"
+            />
+          </label>
+          <br />
+          <label for="rastgele">
+            Rastgele
+            <input
+              type="radio"
+              id="rastgele"
+              name="practiceType"
+              value="random"
+            />
+          </label>
+          <br />
+        </div>
+
+        <div>
+          <p>Dil seç</p>
+          <label for="ingilizce-pratik">
+            Sadece İngilizce
+            <input
+              type="radio"
+              id="ingilizce-pratik"
+              name="choose-language"
+              value="english"
+            />
+          </label>
+          <br />
+          <label for="türkce-pratik">
+            Sadece Türkçe
+            <input
+              type="radio"
+              id="türkce-pratik"
+              name="choose-language"
+              value="turkish"
+            />
+          </label>
+          <br />
+          <label for="rastgele-pratik">
+            Rastgele
+            <input
+              type="radio"
+              id="rastgele-pratik"
+              name="choose-language"
+              value="random"
+            />
+          </label>
+          <br />
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
