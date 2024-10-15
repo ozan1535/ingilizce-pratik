@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "İngilizce-Türkçe Kelime Pratik",
+  "version": "1.0",
+  "description": "İngilizce ve Türkçe kelime pratiği yapın. Yazılı veya çoktan seçmeli sorularla dil becerilerinizi geliştirin.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": []
+}
